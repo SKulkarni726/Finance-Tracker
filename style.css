@@ -11,4 +11,36 @@ h3 {
   text-align: center;
   height:150px
 }
-  
+
+header {
+  position: relative;
+}
+
+.lines {
+  width: 30px;
+  cursor: pointer;
+}
+
+.lines span {
+  display: block;
+  height: 4px;
+  background: black;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: #f8f8f8;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+}
+
+
+.menu.active {
+  display: flex;
+}
+
