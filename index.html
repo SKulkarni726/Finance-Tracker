@@ -5,12 +5,31 @@
     <<link rel="stylesheet" type="text/css" href="style.css">
   </head>
   
-  <script>
-        const lines = document.getElementbyId("lines");
-        const menu = document.getElementbyId("menu");
-      </script>
+  
 
   <body style="background-color:white;">
+  <header>
+    <div class="lines" id="lines">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav class="menu" id="menu">
+    <a href="#">Home</a>
+    <a href="#">Insert Spending</a>
+    <a href="#">Balance</a>
+  </nav>
+  </header>
+
+    <script>
+        const lines = document.getElementbyId("lines");
+        const menu = document.getElementbyId("menu");
+      lines.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+      </script>
+    
     <div class = "header">
     <h1> Saral's Finance Tracker </h1>
     </div>
